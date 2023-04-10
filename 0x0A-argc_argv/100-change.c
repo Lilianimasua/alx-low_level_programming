@@ -26,12 +26,12 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	for (j = 0; j < 5 && num >= 0; j++)
+	for (i = 0; i < 5 && num >= 0; i++)
 	{
-		while (num >= coins[j])
+		while (num >= coins[i])
 		{
 			result++;
-			num -= coins[j];
+			num -= coins[i];
 		}
 	}
 		printf("%d\n", result);
